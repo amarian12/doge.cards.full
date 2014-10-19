@@ -4,7 +4,7 @@ include_once 'functions.php';
 sec_session_start(); 
 ?>
 
-<?php echo 'DogeAPI is shutting down, that means we have to change our whole API system - losing all of your cards in the process! Do not worry - you will all be compensated for this.'; /*<?php if(login_check($mysqli) == true) : ?>
+<?php echo <?php if(login_check($mysqli) == true) : ?>
         	<a href="dashboard" class="button">Dashboard</a>
 			<a href="logout" class="button">Logout</a>
 		<?php else : ?>
