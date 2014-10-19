@@ -37,7 +37,8 @@
 		$query = "SELECT walletAddress, walletUser, userID, debt from users WHERE username = '" . $_SESSION['username'] . "' LIMIT 1";
 		$result = mysqli_query($link, $query);
 		$row = mysqli_fetch_assoc($result);
-		$balance = file_get_contents('https://www.dogeapi.com/wow/v2/?api_key=APIKEY&a=get_user_balance&user_id=' . $row['walletUser']);
+		/api/v2/get_transactions/?api_key=API KEY&type=received&user_ids=
+		$balance = file_get_contents('https://www.block.io/api/v1/get_address_balance/?api_key=APIKEY&user_id=' . $row['walletUser']);
 		$json_a = json_decode($balance,true); 
 		$new_balance = $json_a['data'][balance] - $row['debt'];
 		$userID = $row['userID'];
