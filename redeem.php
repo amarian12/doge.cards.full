@@ -81,7 +81,7 @@ define('MyConst', TRUE);
                       </div>
                  </form><br>
 <br>
-Don't have a dogecoin wallet? Get an offline one <a href="http://dogecoin.com/">here</a>, or if you prefer an online wallet, <a href="http://moolah.io">Moolah</a> or <a href="http://www.dogeapi.com">DogeAPI</a>!<br><br>
+Don't have a dogecoin wallet? Get an offline one <a href="http://dogecoin.com/">here</a>, or if you prefer an online wallet, <a href="http://block.io">Block.io</a> or <a href="http://www.dogechain.info">Dogechain.info</a>!<br><br>
 
 <script>
   CoinWidgetCom.go({
